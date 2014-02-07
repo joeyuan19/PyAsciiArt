@@ -7,7 +7,7 @@ def asciify(img,width=80,invert=False,vert_scale=False):
     X,Y = tmp.size
     factor = float(width)/X
     if vert_scale:
-        vert_scale = 0.5
+        vert_scale = 0.75
     else:
         vert_scale = 1.0
     tmp = tmp.resize((int(X*factor),int(Y*factor*vert_scale)))
